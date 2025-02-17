@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CALCULADORA</title>
+</head>
+<body><center>
+    <h1>CALCULADORA</h1>
+        <form name ="MENU">
+            <p>Numero1:<input type="text" name="caja1" size="20"></p>
+            <p>Numero2:<input type ="text" name="caja2" size="20"></p>
+            <p>Resultado:<input type="text" name="resultado" size="20"></p>
+            <p><input type="button" value="SUMAR" onclick="SUMAR()">
+            <input type="button" value="RESTAR" onclick="RESTAR()">
+            <input type="button" value="MULTIPLICAR" onclick="MULTIPLICAR()">
+            <input type="button" value="DIVIDIR" onclick="DIVIDIR()">
+        </form></center>
+        
+        <script>
+            function SUMAR(){
+                var n1 = parseFloat(document.MENU.caja1.value);
+                var n2 = parseFloat(document.MENU.caja2.value);
+                document.MENU.resultado.value= n1+n2;
+            }
+
+            function RESTAR(){
+                var n1 = parseFloat(document.MENU.caja1.value);
+                var n2 = parseFloat(document.MENU.caja2.value);
+                document.MENU.resultado.value= n1-n2;
+            }
+
+            function MULTIPLICAR(){
+                var n1 = parseFloat(document.MENU.caja1.value);
+                var n2 = parseFloat(document.MENU.caja2.value);
+                document.MENU.resultado.value= n1*n2;
+            }
+
+            function DIVIDIR(){
+                var n1 = parseFloat(document.MENU.caja1.value);
+                var n2 = parseFloat(document.MENU.caja2.value);
+                document.MENU.resultado.value= n1/n2;
+            }
+        </script>
+</body>
+</html>
